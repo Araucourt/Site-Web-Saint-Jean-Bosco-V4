@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saints Patrons – Saint Jean Bosco</title>
+  <link rel="icon" href="img/instit_st_jean_bosco.jpeg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+
+  <header class="site-header" role="banner">
+    <div class="hero-band"></div>
+    <a class="logo-wrap" href="index.html" aria-label="Accueil">
+      <div class="logo-circle">
+        <img class="logo-img" src="img/instit_st_jean_bosco.jpeg" alt="École Saint Jean Bosco – Troyes">
+      </div>
+    </a>
+    <nav class="nav-bar" aria-label="Navigation principale">
+      <button class="nav-toggle" aria-expanded="false" aria-label="Ouvrir le menu" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="ecole.html" aria-current="page">L'École</a>
+        <a href="inscription.html">Inscription</a>
+        <a href="actualite.html">Actualité</a>
+        <a href="infos.html">Informations pratiques</a>
+        <a href="soutenir.html">Nous soutenir</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Bandeau titre bleu-gris (comme spécifié dans le PDF page 3) -->
+  <div class="band" style="padding:1.75rem 0;">
+    <div class="container">
+      <h1 class="band-title" style="margin-bottom:0; padding-bottom:0;">
+        Saints patrons de l'école
+      </h1>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+
+        <p style="text-align:center; color:var(--text-light); margin-bottom:2rem; font-style:italic;">
+          Cliquez sur un portrait pour découvrir la biographie du saint.
+        </p>
+
+        <!-- Portraits (générés par saints.js) -->
+        <div id="saints-portraits" class="saints-portraits"
+             role="group" aria-label="Portraits des saints patrons">
+          <!-- Injecté dynamiquement par saints.js -->
+        </div>
+
+        <!-- Biographie (injectée dynamiquement) -->
+        <div id="saint-bio-container" aria-live="polite" aria-atomic="true">
+          <!-- Biographie affichée ici au clic -->
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-contacts">
+          <h2>Contacts</h2>
+          <address>
+            <strong>École Saint Jean Bosco</strong>
+            18-20 avenue Charles De Gaulle – 78 230 Le Pecq<br>
+            Tél. <a href="tel:+33139588840">01 39 58 88 40</a><br>
+            Email : <a href="mailto:secretariats@ecole-stjb.fr">secretariats@ecole-stjb.fr</a>
+          </address>
+        </div>
+        <div class="footer-social">
+          <div class="footer-social-label">Rejoignez-nous sur les réseaux</div>
+          <nav aria-label="Réseaux sociaux">
+            <div class="social-icons">
+              <a class="social-icon si-fb" href="#" aria-label="Facebook">f</a>
+              <a class="social-icon si-yt" href="#" aria-label="YouTube">▶</a>
+              <a class="social-icon si-li" href="#" aria-label="LinkedIn">in</a>
+              <a class="social-icon si-ig" href="#" aria-label="Instagram">📷</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 École Saint Jean Bosco – Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/saints.js"></script>
+</body>
+</html>
